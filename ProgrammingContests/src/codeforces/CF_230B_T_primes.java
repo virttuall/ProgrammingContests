@@ -15,7 +15,7 @@ public class CF_230B_T_primes {
     if (n < 2)  return new ArrayList<Integer>();
     char[] is_composite = new char[(n - 2 >> 5) + 1];
     final int limit_i = n - 2 >> 1, limit_j = 2 * limit_i + 3;
-    ArrayList<Integer> results = new ArrayList<>((int) Math.ceil(1.25506    * n / Math.log(n)));
+    ArrayList<Integer> results = new ArrayList<Integer>((int) Math.ceil(1.25506    * n / Math.log(n)));
     results.add(2);
     for (int i = 0; i < limit_i; ++i) 
         if ((is_composite[i >> 4] & 1 << (i & 0xF)) == 0) {
