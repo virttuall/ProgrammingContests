@@ -1,11 +1,11 @@
-package acm_icpc_live_archive;
+package codeforces;
 
 // Untested
 
 import java.io.*;
 import java.util.*;
 
-public class JokeWithPermutation {
+public class CF_GYM_NEERC14_JokeWithPermutation {
 	public static class Node
 	{
 		Node father;
@@ -21,7 +21,8 @@ public class JokeWithPermutation {
 public static void main(String[] args) throws IOException {
 
 	BufferedReader in;
-	File file = new File("in");
+	File file = new File("joke.in");
+	PrintWriter outFile = new PrintWriter("joke.out");
 	if ( file.exists())
 	{
 		in = new BufferedReader(new FileReader(file));
@@ -139,7 +140,8 @@ public static void main(String[] args) throws IOException {
 			if (cort[i+1] && i != joeyPermutation.length()-1) out.append(" ");
 		
 		}
-		System.out.println(out);
+		outFile.println(out);
 	}
+	outFile.close();
 }
 }
