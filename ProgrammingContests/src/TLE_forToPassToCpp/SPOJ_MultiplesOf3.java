@@ -1,4 +1,4 @@
-package spoj;
+package TLE_forToPassToCpp;
 
 //TLE
 // to pass to c++
